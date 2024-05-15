@@ -1,0 +1,2236 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: Parisienne-Regular;
+  src: url("../fonts/FONT/Parisienne-Regular.ttf");
+}
+@font-face {
+  font-family: Inter;
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  overflow-x: hidden;
+  width: 100%;
+  height: 85vh;
+  margin: 3% 0;
+}
+
+.links {
+  width: 100%;
+  height: 100vh;
+  background: #DA5C5C;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 100vw;
+  display: none;
+}
+.links ul {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.links ul a {
+  font-size: 2rem;
+}
+
+.slider {
+  transform: translateX(-100vw);
+  display: block;
+}
+
+.mobile-navbar {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  gap: 18.75rem;
+}
+.mobile-navbar .name {
+  font-size: large;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+}
+.mobile-navbar .hamburger {
+  z-index: 2;
+  height: 3rem;
+  width: 3rem;
+  border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+}
+.mobile-navbar .hamburger .line {
+  height: 3px;
+  width: 70%;
+  background: white;
+}
+
+.pc-navbar {
+  display: none;
+  border-bottom: 2px solid #DA5C5C;
+}
+
+.banner .container .row .left {
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.banner .container .row .left .big {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+  font-family: Inter;
+  margin-bottom: 20px;
+}
+.banner .container .row .left .web {
+  font-weight: 400;
+  color: white;
+  font-family: Inter;
+  margin-bottom: 20px;
+}
+.banner .container .row .left .btn {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0;
+}
+.banner .container .row .left .btn button {
+  background: #DA5C5C;
+  border: none;
+  color: white;
+  border-radius: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Inter;
+  padding: 1rem 3rem;
+}
+.banner .container .right .pink {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.banner .container .right .pink .one {
+  border-radius: 100%;
+  background-color: #DA5C5C;
+  width: 40px;
+  height: 40px;
+}
+.banner .container .right .pink .two {
+  border-radius: 100%;
+  background-color: #DA5C5C;
+  width: 300px;
+  height: 300px;
+}
+.banner .container .right .pink .two .pic {
+  height: 66vh;
+  margin-top: -140px;
+  margin-left: -13px;
+}
+
+.about {
+  margin-top: 120px;
+  background: rgb(43, 42, 42);
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.about .container .row {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.about .container .row .ppp {
+  font-size: 30px;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+  display: flex;
+  justify-content: start;
+  padding-top: 40px;
+}
+.about .container .row .ttttt {
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  padding-bottom: 30px;
+}
+.about .container .row .text {
+  width: 450px;
+  font-family: Inter;
+  font-size: 20px;
+  padding-top: 90px;
+}
+.about .container .row .text .hi {
+  font-size: 22px;
+}
+
+.Services .aaaaa {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  text-align: center;
+  font-family: Inter;
+}
+.Services .container .ppppp {
+  font-size: 30px;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+  display: flex;
+  justify-content: start;
+  padding-top: 40px;
+}
+.Services .container .nnnnn {
+  font-size: 30px;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+  display: flex;
+  justify-content: start;
+  padding-top: -90px;
+}
+.Services .container .row .aaaaa {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  margin-top: -70px;
+}
+.Services .container .row .left {
+  padding-bottom: 60px;
+}
+.Services .container .row .left .ppp {
+  padding-top: 30px;
+}
+.Services .container .row .left .graphic {
+  height: 40vh;
+  width: 25rem;
+  background: rgb(215, 155, 155);
+}
+.Services .container .row .left .graphic .loud {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-left: 11rem;
+  padding-top: 30px;
+}
+.Services .container .row .left .graphic .ggggg {
+  font-weight: bold;
+  color: black;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-family: Inter;
+}
+.Services .container .row .left .graphic .there {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  width: 332px;
+  margin-left: 40px;
+  font-family: Inter;
+}
+.Services .container .row .left .web {
+  height: 40vh;
+  width: 25rem;
+  background: rgb(215, 155, 155);
+  margin-top: 60px;
+  font-family: Inter;
+}
+.Services .container .row .left .web .vvvvv {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-left: 11rem;
+  padding-top: 30px;
+}
+.Services .container .row .left .web .web-ed {
+  font-weight: bold;
+  color: black;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-family: Inter;
+}
+.Services .container .row .left .web .are {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  width: 332px;
+  margin-left: 40px;
+  font-family: Inter;
+}
+.Services .container .row .right .video {
+  height: 40vh;
+  width: 25rem;
+  background: #DA5C5C;
+  margin-left: 0rem;
+  margin-top: px;
+}
+.Services .container .row .right .video .vid {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-left: 11rem;
+  padding-top: 30px;
+}
+.Services .container .row .right .video .xxxxx {
+  font-weight: bold;
+  color: black;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-family: Inter;
+}
+.Services .container .row .right .video .many {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  width: 332px;
+  margin-left: 40px;
+  font-family: Inter;
+}
+.Services .container .row .right .Brand {
+  height: 40vh;
+  width: 25rem;
+  background: #DA5C5C;
+  margin-left: 0rem;
+  margin-top: 60px;
+}
+.Services .container .row .right .Brand .lllll {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  margin-left: 11rem;
+  padding-top: 30px;
+}
+.Services .container .row .right .Brand .kkkkk {
+  font-weight: bold;
+  color: black;
+  margin-left: 140px;
+  margin-top: 30px;
+  font-family: Inter;
+}
+.Services .container .row .right .Brand .have {
+  font-weight: bold;
+  color: black;
+  margin-top: 10px;
+  width: 332px;
+  margin-left: 40px;
+  font-family: Inter;
+}
+
+.skills {
+  margin-top: 120px;
+  background: rgb(43, 42, 42);
+  color: white;
+  height: 90vh;
+}
+.skills .container .ppppp {
+  font-size: 30px;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+  display: flex;
+  justify-content: start;
+  padding-top: 40px;
+}
+.skills .container .skil {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter;
+}
+.skills .container .row .left {
+  font-family: Inter;
+}
+.skills .container .row .left .tech {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  justify-content: center;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  padding-top: 20px;
+}
+.skills .container .row .left .adobe {
+  padding-top: 20px;
+  font-size: 14px;
+}
+.skills .container .row .left .adobe span {
+  color: white;
+  margin-left: 160px;
+}
+.skills .container .row .left .rectangle {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .left .rectangle .rec {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .left .af {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .left .af span {
+  color: white;
+  margin-left: 160px;
+}
+.skills .container .row .left .square {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .left .square .rect {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .left .illu {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .left .illu span {
+  color: white;
+  margin-left: 160px;
+}
+.skills .container .row .left .main {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .left .main .recta {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .left .effects {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .left .effects span {
+  color: white;
+  margin-left: 200px;
+}
+.skills .container .row .left .tree {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .left .tree .rectangle {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .right {
+  font-family: Inter;
+}
+.skills .container .row .right .proff {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  justify-content: center;
+  text-align: start;
+  font-family: Inter;
+  font-size: 20px;
+  padding-top: 60px;
+}
+.skills .container .row .right .adobe {
+  padding-top: 20px;
+  font-size: 14px;
+}
+.skills .container .row .right .adobe span {
+  color: white;
+  margin-left: 160px;
+}
+.skills .container .row .right .rectangle {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .right .rectangle .rec {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .right .af {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .right .af span {
+  color: white;
+  margin-left: 200px;
+}
+.skills .container .row .right .square {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .right .square .rect {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .right .illu {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .right .illu span {
+  color: white;
+  margin-left: 200px;
+}
+.skills .container .row .right .main {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .right .main .recta {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+.skills .container .row .right .effects {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.skills .container .row .right .effects span {
+  color: white;
+  margin-left: 200px;
+}
+.skills .container .row .right .tree {
+  height: 5px;
+  background: rgb(215, 155, 155);
+  width: 341px;
+  border-radius: 30px;
+}
+.skills .container .row .right .tree .rectangle {
+  height: 5px;
+  background: #DA5C5C;
+  width: 342px;
+  border-radius: 30px;
+}
+
+.footer .container .ppppp {
+  font-size: 30px;
+  font-weight: 400;
+  color: #DA5C5C;
+  font-family: Parisienne-Regular;
+  display: flex;
+  justify-content: start;
+  padding-top: 40px;
+}
+.footer .container .row .ddddd {
+  color: white;
+  -webkit-text-decoration: underline 4px solid #DA5C5C;
+          text-decoration: underline 4px solid #DA5C5C;
+  justify-content: center;
+  text-align: center;
+  font-family: Inter;
+}
+.footer .container .left .conta {
+  font-weight: 600;
+  color: white;
+  font-family: Inter;
+  margin-top: 70px;
+}
+.footer .container .left .pic .hhhhh {
+  height: 40px;
+  padding-top: 10px;
+}
+.footer .container .left .bud {
+  font-weight: 400;
+  color: white;
+  font-family: Inter;
+  margin-left: 40px;
+  margin-top: -20px;
+}
+.footer .container .left .zzzzz {
+  height: 60px;
+  width: 40px;
+  padding-top: 20px;
+}
+.footer .container .left p {
+  color: white;
+  font-family: Inter;
+  font-weight: 400;
+  margin-left: 40px;
+  margin-top: -30px;
+}
+.footer .container .left .wwwww {
+  height: 40px;
+  margin-top: 20px;
+}
+.footer .container .left h3 {
+  color: white;
+  font-family: Inter;
+  margin-top: 30px;
+  display: flex;
+  justify-content: start;
+}
+.footer .container .left .imagez {
+  display: flex;
+  justify-content: start;
+  margin-top: 25px;
+}
+.footer .container .left .imagez img {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
+}
+.footer .container .right {
+  padding-top: 24px;
+  font-family: Inter;
+  gap: 40px;
+  margin-left: 2px;
+}
+.footer .container .right .qqqqq {
+  font-weight: 400;
+  color: white;
+  padding-top: 20px;
+}
+.footer .container .right form {
+  margin-bottom: 30px;
+}
+.footer .container .right form input {
+  background-color: #DA5C5C;
+  border: none;
+  color: black;
+  height: 6vh;
+  width: 329px;
+}
+.footer .container .right form .placeholder {
+  color: black;
+}
+.footer .container .right .sssss {
+  font-weight: 400;
+  color: white;
+}
+.footer .container .right .sssss form input {
+  background-color: #DA5C5C;
+  border: none;
+  color: black;
+  height: 6vh;
+  width: 400px;
+}
+.footer .container .right .sssss form .placeholder {
+  color: black;
+}
+.footer .container .right .miss .ttttt {
+  font-weight: 400;
+  color: white;
+}
+.footer .container .right .miss form input {
+  background-color: #DA5C5C;
+  border: none;
+  color: black;
+  height: 10vh;
+  width: 329px;
+}
+.footer .container .right .miss form .placeholder {
+  color: black;
+}
+.footer .container .right button {
+  background-color: #DA5C5C;
+  height: 5vh;
+  border: none;
+  color: black;
+  font-weight: 400;
+  width: 110px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+  .pc-navbar {
+    display: block;
+  }
+  .pc-navbar .flexcontainer {
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-navbar .flexcontainer .name {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+  }
+  .pc-navbar .flexcontainer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    font-weight: 900;
+  }
+  .pc-navbar .flexcontainer ul a {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+  }
+  .banner .container {
+    height: 67;
+  }
+  .banner .container .row .left {
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 19rem;
+  }
+  .banner .container .row .left .big {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: Inter;
+    margin-bottom: 20px;
+  }
+  .banner .container .row .left .web {
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    margin-bottom: 20px;
+  }
+  .banner .container .row .left .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+  }
+  .banner .container .row .left .btn button {
+    background: #DA5C5C;
+    border: none;
+    color: white;
+    border-radius: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Inter;
+    padding: 1rem 3rem;
+  }
+  .banner .container .row .right .pink .two .pic {
+    height: 43vh;
+    margin-top: -140px;
+    margin-left: -12px;
+  }
+  .about {
+    margin-top: 120px;
+    background: rgb(43, 42, 42);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .about .container .row {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .about .container .row .ppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .about .container .row .ttttt {
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    padding-bottom: 30px;
+  }
+  .about .container .row .text {
+    width: 450px;
+    font-family: Inter;
+    font-size: 20px;
+    padding-top: 90px;
+  }
+  .about .container .row .text .hi {
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+  }
+  .Services .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    text-align: center;
+    font-family: Inter;
+  }
+  .Services .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .Services .container .nnnnn {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: -90px;
+  }
+  .Services .container .row .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    margin-top: -70px;
+  }
+  .Services .container .row .left {
+    padding-bottom: 60px;
+  }
+  .Services .container .row .left .ppp {
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic {
+    height: 32vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+  }
+  .Services .container .row .left .graphic .loud {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic .ggggg {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .graphic .there {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web {
+    height: 32vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+    margin-top: 60px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .vvvvv {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .web .web-ed {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .are {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video {
+    height: 32vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+    margin-top: px;
+  }
+  .Services .container .row .right .video .vid {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .video .xxxxx {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video .many {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand {
+    height: 32vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+    margin-top: 60px;
+  }
+  .Services .container .row .right .Brand .lllll {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .Brand .kkkkk {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand .have {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .skills {
+    margin-top: 120px;
+    background: rgb(43, 42, 42);
+    color: white;
+    height: 90vh;
+  }
+  .skills .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .skills .container .skil {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    margin-left: -250px;
+  }
+  .skills .container .row .left {
+    font-family: Inter;
+    padding-top: 111px;
+  }
+  .skills .container .row .left .tech {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .left .adobe {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .left .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .af {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .left .af span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .illu {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .left .illu span {
+    color: white;
+    margin-left: 140px;
+  }
+  .skills .container .row .left .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .effects {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .left .effects span {
+    color: white;
+    margin-left: 187px;
+  }
+  .skills .container .row .left .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right {
+    font-family: Inter;
+    padding-top: 72px;
+  }
+  .skills .container .row .right .proff {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .right .adobe {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .right .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .right .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 341x;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .af {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .right .af span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 341px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 341px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .illu {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .right .illu span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 341px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .effects {
+    padding-top: 40px;
+    font-size: 14px;
+  }
+  .skills .container .row .right .effects span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 341px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 314px;
+    border-radius: 30px;
+  }
+  .footer .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .footer .container .row .ddddd {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+  }
+  .footer .container .left .conta {
+    font-weight: 600;
+    color: white;
+    font-family: Inter;
+    margin-top: 70px;
+  }
+  .footer .container .left .pic .hhhhh {
+    height: 40px;
+    padding-top: 10px;
+  }
+  .footer .container .left .bud {
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .footer .container .left .zzzzz {
+    height: 60px;
+    width: 40px;
+    padding-top: 20px;
+  }
+  .footer .container .left p {
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: -30px;
+  }
+  .footer .container .left .wwwww {
+    height: 40px;
+    margin-top: 20px;
+  }
+  .footer .container .left h3 {
+    color: white;
+    font-family: Inter;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .container .left .imagez {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .footer .container .left .imagez img {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+  }
+  .footer .container .right {
+    font-family: Inter;
+  }
+  .footer .container .right .qqqqq {
+    font-weight: 400;
+    color: white;
+    padding-top: 20px;
+  }
+  .footer .container .right form {
+    margin-bottom: 30px;
+  }
+  .footer .container .right form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right form .placeholder {
+    color: black;
+  }
+  .footer .container .right .sssss {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .sssss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right .sssss form .placeholder {
+    color: black;
+  }
+  .footer .container .right .miss .ttttt {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .miss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 10vh;
+    width: 400px;
+  }
+  .footer .container .right .miss form .placeholder {
+    color: black;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .banner .container {
+    height: 67;
+  }
+  .banner .container .row .left {
+    height: 37vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-top: 19rem;
+  }
+  .banner .container .row .left .big {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    font-family: Inter;
+    margin-bottom: 20px;
+  }
+  .banner .container .row .left .web {
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    margin-bottom: 20px;
+  }
+  .banner .container .row .left .btn {
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 0;
+  }
+  .banner .container .row .left .btn button {
+    background: #DA5C5C;
+    border: none;
+    color: white;
+    border-radius: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Inter;
+    padding: 1rem 3rem;
+  }
+  .banner .container .row .right .pink .two .pic {
+    height: 58vh;
+    margin-top: -163px;
+    margin-left: -12px;
+  }
+  .about {
+    margin-top: 120px;
+    background: rgb(43, 42, 42);
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .about .container .row {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .about .container .row .ppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .about .container .row .ttttt {
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    padding-bottom: 30px;
+  }
+  .about .container .row .text {
+    width: 450px;
+    font-family: Inter;
+    font-size: 20px;
+    padding-top: 90px;
+  }
+  .about .container .row .text .hi {
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+  }
+  .Services .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    text-align: center;
+    font-family: Inter;
+  }
+  .Services .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .Services .container .nnnnn {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: -90px;
+  }
+  .Services .container .row .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    margin-top: -70px;
+  }
+  .Services .container .row .left {
+    padding-bottom: 60px;
+  }
+  .Services .container .row .left .ppp {
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic {
+    height: 40vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+    margin-left: 60px;
+  }
+  .Services .container .row .left .graphic .loud {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic .ggggg {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .graphic .there {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web {
+    height: 40vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+    margin-left: 60px;
+    margin-top: 60px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .vvvvv {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .web .web-ed {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .are {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video {
+    height: 40vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+  }
+  .Services .container .row .right .video .vid {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .video .xxxxx {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video .many {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand {
+    height: 40vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+    margin-top: 60px;
+  }
+  .Services .container .row .right .Brand .lllll {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .Brand .kkkkk {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand .have {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .skills {
+    margin-top: 120px;
+    background: rgb(43, 42, 42);
+    color: white;
+    height: 100vh;
+  }
+  .skills .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .skills .container .skil {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    margin-left: -250px;
+  }
+  .skills .container .row .left {
+    font-family: Inter;
+  }
+  .skills .container .row .left .tech {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .left .adobe {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 400px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .af {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .af span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .illu {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .illu span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 400px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .effects {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .effects span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .left .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right {
+    font-family: Inter;
+  }
+  .skills .container .row .right .proff {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .right .adobe {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .right .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .af {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .af span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .illu {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .illu span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .effects {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .effects span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .footer .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .footer .container .row .ddddd {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+  }
+  .footer .container .left .conta {
+    font-weight: 600;
+    color: white;
+    font-family: Inter;
+    margin-top: 70px;
+  }
+  .footer .container .left .pic .hhhhh {
+    height: 40px;
+    padding-top: 10px;
+  }
+  .footer .container .left .bud {
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .footer .container .left .zzzzz {
+    height: 60px;
+    width: 40px;
+    padding-top: 20px;
+  }
+  .footer .container .left p {
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: -30px;
+  }
+  .footer .container .left .wwwww {
+    height: 40px;
+    margin-top: 20px;
+  }
+  .footer .container .left h3 {
+    color: white;
+    font-family: Inter;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .container .left .imagez {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .footer .container .left .imagez img {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+  }
+  .footer .container .right {
+    padding-top: 105px;
+    font-family: Inter;
+    gap: 40px;
+    margin-left: -13px;
+  }
+  .footer .container .right .qqqqq {
+    font-weight: 400;
+    color: white;
+    padding-top: 20px;
+  }
+  .footer .container .right form {
+    margin-bottom: 30px;
+  }
+  .footer .container .right form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right form .placeholder {
+    color: black;
+  }
+  .footer .container .right .sssss {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .sssss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right .sssss form .placeholder {
+    color: black;
+  }
+  .footer .container .right .miss .ttttt {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .miss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 10vh;
+    width: 400px;
+  }
+  .footer .container .right .miss form .placeholder {
+    color: black;
+  }
+  .footer .container .right button {
+    background-color: #DA5C5C;
+    height: 5vh;
+    border: none;
+  }
+}
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .banner .container .row .left {
+    height: 32vh;
+  }
+  .banner .container .right .pink .two .pic {
+    height: 58vh;
+    margin-top: -163px;
+    margin-left: -12px;
+  }
+  .skills {
+    margin-top: 120px;
+    background: rgb(43, 42, 42);
+    color: white;
+    height: 90vh;
+  }
+  .skills .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .skills .container .skil {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+    margin-left: -250px;
+  }
+  .skills .container .row .left {
+    font-family: Inter;
+  }
+  .skills .container .row .left .tech {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .left .adobe {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 400px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .af {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .af span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .illu {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .illu span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .left .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 400px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .effects {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .left .effects span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .left .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .left .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right {
+    font-family: Inter;
+  }
+  .skills .container .row .right .proff {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: start;
+    font-family: Inter;
+  }
+  .skills .container .row .right .adobe {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .adobe span {
+    color: white;
+    margin-left: 160px;
+  }
+  .skills .container .row .right .rectangle {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .rectangle .rec {
+    height: 10px;
+    background: #DA5C5C;
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .af {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .af span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .square {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .square .rect {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .illu {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .illu span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .main {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .main .recta {
+    height: 10px;
+    background: #DA5C5C;
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .effects {
+    padding-top: 40px;
+    font-size: 20px;
+  }
+  .skills .container .row .right .effects span {
+    color: white;
+    margin-left: 200px;
+  }
+  .skills .container .row .right .tree {
+    height: 10px;
+    background: rgb(215, 155, 155);
+    width: 450px;
+    border-radius: 30px;
+  }
+  .skills .container .row .right .tree .rectangle {
+    height: 10px;
+    background: #DA5C5C;
+    width: 415px;
+    border-radius: 30px;
+  }
+  .footer .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .footer .container .row .ddddd {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    justify-content: center;
+    text-align: center;
+    font-family: Inter;
+  }
+  .footer .container .left .conta {
+    font-weight: 600;
+    color: white;
+    font-family: Inter;
+    margin-top: 70px;
+  }
+  .footer .container .left .pic .hhhhh {
+    height: 40px;
+    padding-top: 10px;
+  }
+  .footer .container .left .bud {
+    font-weight: 400;
+    color: white;
+    font-family: Inter;
+    margin-left: 40px;
+    margin-top: -20px;
+  }
+  .footer .container .left .zzzzz {
+    height: 60px;
+    width: 40px;
+    padding-top: 20px;
+  }
+  .footer .container .left p {
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-top: -30px;
+  }
+  .footer .container .left .wwwww {
+    height: 40px;
+    margin-top: 20px;
+  }
+  .footer .container .left h3 {
+    color: white;
+    font-family: Inter;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .container .left .imagez {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+  .footer .container .left .imagez img {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+  }
+  .footer .container .right {
+    padding-top: 37px;
+    font-family: Inter;
+    gap: 40px;
+    margin-left: -41px;
+  }
+  .footer .container .right .qqqqq {
+    font-weight: 400;
+    color: white;
+    padding-top: 20px;
+  }
+  .footer .container .right form {
+    margin-bottom: 30px;
+  }
+  .footer .container .right form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right form .placeholder {
+    color: black;
+  }
+  .footer .container .right .sssss {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .sssss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 6vh;
+    width: 400px;
+  }
+  .footer .container .right .sssss form .placeholder {
+    color: black;
+  }
+  .footer .container .right .miss .ttttt {
+    font-weight: 400;
+    color: white;
+  }
+  .footer .container .right .miss form input {
+    background-color: #DA5C5C;
+    border: none;
+    color: black;
+    height: 10vh;
+    width: 400px;
+  }
+  .footer .container .right .miss form .placeholder {
+    color: black;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
