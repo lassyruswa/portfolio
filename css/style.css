@@ -1902,6 +1902,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     margin-top: -163px;
     margin-left: -12px;
   }
+  .about .container .row .text .hi {
+    font-size: 33px;
+    display: flex;
+    justify-content: center;
+  }
   .skills {
     margin-top: 120px;
     background: rgb(43, 42, 42);
@@ -2227,6 +2232,162 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .footer .container .right .miss form .placeholder {
     color: black;
+  }
+  .Services .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    text-align: center;
+    font-family: Inter;
+    margin-left: -32px;
+  }
+  .Services .container {
+    max-width: 923px;
+  }
+  .Services .container .ppppp {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+  }
+  .Services .container .nnnnn {
+    font-size: 30px;
+    font-weight: 400;
+    color: #DA5C5C;
+    font-family: Parisienne-Regular;
+    display: flex;
+    justify-content: start;
+    padding-top: -90px;
+  }
+  .Services .container .row .aaaaa {
+    color: white;
+    -webkit-text-decoration: underline 4px solid #DA5C5C;
+            text-decoration: underline 4px solid #DA5C5C;
+    margin-top: -70px;
+  }
+  .Services .container .row .left {
+    padding-bottom: 60px;
+  }
+  .Services .container .row .left .ppp {
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic {
+    height: 40vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+    margin-left: 60px;
+  }
+  .Services .container .row .left .graphic .loud {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .graphic .ggggg {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .graphic .there {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web {
+    height: 40vh;
+    width: 20rem;
+    background: rgb(215, 155, 155);
+    margin-left: 60px;
+    margin-top: 60px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .vvvvv {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .left .web .web-ed {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .left .web .are {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video {
+    height: 40vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+  }
+  .Services .container .row .right .video .vid {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .video .xxxxx {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .video .many {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand {
+    height: 40vh;
+    width: 20rem;
+    background: #DA5C5C;
+    margin-left: 0rem;
+    margin-top: 60px;
+  }
+  .Services .container .row .right .Brand .lllll {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+    padding-top: 30px;
+  }
+  .Services .container .row .right .Brand .kkkkk {
+    font-weight: bold;
+    color: black;
+    margin-left: 65px;
+    margin-top: 30px;
+    font-family: Inter;
+  }
+  .Services .container .row .right .Brand .have {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    width: 250px;
+    margin-left: 40px;
+    font-family: Inter;
   }
 }
 /*

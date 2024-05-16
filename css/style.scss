@@ -2154,6 +2154,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
            
         }
     } 
+    .about .container .row .text .hi {
+        font-size: 33px;
+        display: flex;
+        justify-content: center;
+    }
     .skills{
         margin-top: 120px;
         background: rgb(43, 42, 42);
@@ -2502,6 +2507,184 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     }
             }}
 }   
+.Services{
+    .aaaaa{
+        color: white;
+        text-decoration: underline 4px solid #DA5C5C;
+        text-align: center;
+        font-family: Inter;
+        margin-left: -32px;
+        
+    }
+    .container{
+        max-width: 923px;
+        .ppppp{
+            font-size: 30px;
+            font-weight: 400;
+            color: #DA5C5C;
+            font-family: Parisienne-Regular;   
+            display: flex;
+            justify-content: start;
+            padding-top: 40px;  
+         
+        }
+      .nnnnn{
+        font-size: 30px;
+            font-weight: 400;
+            color: #DA5C5C;
+            font-family: Parisienne-Regular;   
+            display: flex;
+            justify-content: start;
+            padding-top: -90px;
+      }  
+.row{
+    .aaaaa{
+        color: white;
+        text-decoration: underline 4px solid #DA5C5C;
+        margin-top: -70px;
+        // margin-left: 550px;
+    }
+    .left{
+        // padding-left: 50px;
+        .ppp{
+         padding-top: 30px;
+        }
+        padding-bottom: 60px;
+        .graphic{
+            height: 40vh;
+            width: 20rem;
+            background: rgb(215, 155, 155);
+             margin-left: 60px;
+            .loud{
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                margin-left: 8rem;
+                padding-top: 30px;
+              
+                
+            }
+            .ggggg{
+                font-weight: bold;
+                color: black;
+                 margin-left: 65px;
+                margin-top: 30px;
+                font-family: Inter;
+            }
+            .there{
+                font-weight: bold;
+                color: black; 
+                margin-top: 10px; 
+                width: 250px; 
+                margin-left: 40px;
+                font-family: Inter;
+
+            }
+
+        }
+        .web{
+            height: 40vh;
+            width: 20rem;
+            background: rgb(215, 155, 155);
+             margin-left: 60px;
+            margin-top: 60px;
+            font-family: Inter;
+            .vvvvv{
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                margin-left: 8rem;
+                padding-top: 30px;
+              
+                
+            }
+            .web-ed{
+                font-weight: bold;
+                color: black;
+                margin-left: 65px;
+                margin-top: 30px;
+                font-family: Inter;
+            }
+            .are{
+                font-weight: bold;
+                color: black; 
+                margin-top: 10px; 
+                width: 250px; 
+                margin-left: 40px;
+                font-family: Inter;
+
+            }
+
+        }
+    }
+    .right{
+        .video{
+            height: 40vh;
+            width: 20rem;
+            background: #DA5C5C;
+            margin-left: 0rem;
+            .vid{
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                margin-left: 8rem;
+                padding-top: 30px;
+              
+                
+            }
+            .xxxxx{
+                font-weight: bold;
+                color: black;
+                margin-left: 65px;
+                margin-top: 30px;
+                font-family: Inter;
+            }
+            .many{
+                font-weight: bold;
+                color: black; 
+                margin-top: 10px; 
+                width: 250px; 
+                margin-left: 40px;
+                font-family: Inter;
+            }
+
+        } 
+        .Brand{
+            height: 40vh;
+            width: 20rem;
+            background: #DA5C5C;
+            margin-left: 0rem;
+            margin-top: 60px;
+            .lllll{
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                margin-left: 8rem;
+                padding-top: 30px;
+              
+                
+            }
+            .kkkkk{
+                font-weight: bold;
+                color: black;
+                margin-left: 65px;
+                margin-top: 30px;
+                font-family: Inter;
+            }
+            .have{
+                font-weight: bold;
+                color: black; 
+                margin-top: 10px; 
+                width: 250px; 
+                margin-left: 40px;
+                font-family: Inter;
+            }
+
+        }  
+    }
+}
+    }
+}
 }
 
 
